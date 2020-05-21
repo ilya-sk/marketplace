@@ -105,7 +105,7 @@
         border-radius: 50px;
         background-color: $blue;
         border: none;
-        height: 46px;
+        height: 44px;
         width: 70px;
         right: 0;
         top: 0;
@@ -114,4 +114,53 @@
     .search-img {
         padding-top: 5px;
     }
+}
+
+.search {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 725px;
+}
+
+.search__inner {
+    padding: 185px 0 100px;
+    color: white;
+    text-align: center;
+    &-general {
+        margin-bottom: 26px;
+        font-size: 60px;
+        font-weight: 400;
+    }
+    &-title {
+        margin-bottom: 48px;
+        font-size: 60px;
+        font-weight: 700;
+        
+    }
+    &-text{
+        margin-bottom: 68px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.search__inner-btn {
+    font-weight: 400;
+    font-size: 16px;
+    &--one {
+        padding: 22px 32px;
+        border-radius: 50px;
+        background-color: white;
+        color: $blue;
+    }
+    &--two {
+        margin-left: 30px;
+        padding: 22px 32px;
+        border-radius: 50px;
+        background-color: transparentize;
+        border: 1px solid white;
+        color: white;
+    }
+
 }

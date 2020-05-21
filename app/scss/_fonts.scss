@@ -15,3 +15,12 @@
     font-weight: 400;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "Quicksand", sans-serif;
+    src: url("../fonts/Quicksand-Bold.woff2") format("woff2"),
+         url("../fonts/Quicksand-Bold.woff") format("woff"), 
+         url("../fonts/Quicksand-Bold.ttf") format("truetype");    
+    font-weight: 700;
+    font-display: swap;
+}
