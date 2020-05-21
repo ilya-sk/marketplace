@@ -1,12 +1,117 @@
-html {
-    box-sizing: border-box;
-}
-*,
-*::after,
-*::after {
-    box-sizing: inherit;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+.header__top {
+    background-color: #eef1f3;
 }
 
-.box {
+.header__logo {
+    padding-left: 22px;
+}
+
+.header__top-inner {
     display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.header-btn {
+    padding: 14px 30px 12px 18px;
+    border-radius: 50px;
+    background-color: $blue;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.header__user {
+    margin-left: 22px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+
+    span {
+        color: $black;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.header__down-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+
+
+}
+
+.menu__list {
+    .menu__list-item {
+        padding-left: 5px;
+        display: inline-block;
+        color: $black;
+        font-weight: 500;
+        font-size: 15px;
+        text-transform: uppercase;
+
+        &+li {
+            margin-left: 30px;
+        }
+    }
+
+    .menu__list--link {
+        color: $black;
+    }
+}
+
+.search-form {
+    width: 360px;
+    position: relative;
+
+    .search-input {
+        display: block;
+        width: 100%;
+        border-radius: 50px;
+        height: 44px;
+        border: solid 1px #d9dfe5;
+        font-weight: 500;
+        font-size: 15px;
+        padding-left: 25px;
+        padding-right: 90px;
+        outline: none;
+
+        &:focus {
+            border-radius: 50px;
+            border: solid 1px $black;
+        }
+
+        &::placeholder {
+            color: #898f96;
+            font-weight: 400px;
+            font-size: 15px;
+        }
+    }
+
+    .search-btn {
+        position: absolute;
+        border-radius: 50px;
+        background-color: $blue;
+        border: none;
+        height: 46px;
+        width: 70px;
+        right: 0;
+        top: 0;
+    }
+
+    .search-img {
+        padding-top: 5px;
+    }
 }
