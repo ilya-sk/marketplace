@@ -3,16 +3,18 @@ $(function(){
     $(".rate-star").rateYo({
         rating: 4.6,
         starWidth: "14px",
-        readOnly: true
+        readOnly: true,
+        spacing: "4px",
+        ratedFill: "#ffc000",
       });
 
 
     var mixer = mixitup('.product__inner-box');
 
-    $('.slaider-content').slick({
+    $('.slider-content').slick({
         prevArrow: '<button type="button" class="slick-arrow slick-arrow--prev"></span></button>',
         nextArrow: '<button type="button" class="slick-arrow slick-arrow--next"></button>',
-        appendArrows: '.slaider-arrows',
+        appendArrows: '.slider-arrows',
 
       });
 

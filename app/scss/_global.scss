@@ -8,21 +8,13 @@ html {
 }
 
 body {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand";
 }
 
 a {
-    display: inline-block;
-    text-decoration: none;
-    color: $blue;
+    text-decoration: none;  
 }
 
-ul,
-li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
 .container {
     max-width: 1170px;
